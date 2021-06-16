@@ -5,7 +5,7 @@ library(highcharter)
 library(tidyverse)
 
 
-df <-read_excel("data/PM25_2000_2019_urban.xlsx")
+df <-read_excel("PM25_2000_2019_urban.xlsx")
 
 df$"WHORegion" <- as.character(df$"WHORegion")
 colnames(df)[6] <- 'PM2.5'
